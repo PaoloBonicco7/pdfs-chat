@@ -1,5 +1,5 @@
 # Pdfs-chat
----
+
 A simple application for chatting with your document, locally and using OpenAI API
 
 ## Dependencies and Installation
@@ -12,15 +12,20 @@ A simple application for chatting with your document, locally and using OpenAI A
 
 2. Create the virtual environment
     ```
-    python -m venv tutorial-env
+    python -m venv .venv
+    ```
+   
+3. Activate the virtual environment
+    ```
+    source .venv/bin/activate
     ```
 
-3. And Install the requirements
+4. And Install the requirements
     ```
     pip install -r requirements.txt
     ```
 
-4. (Optional) Add your OpenAI API key in the `.env` file
+5. (Optional) Add your OpenAI API key in the `.env` file
     ```
     OPENAI_API_KEY=your_api_key
     ```
@@ -42,3 +47,11 @@ don't want to run it locally.
 4. Load multiple PDF documents into the app by following the provided instructions.
 
 5. Ask questions in natural language about the loaded PDFs using the chat interface.
+
+## Developer Notes
+---
+
+To update the requirements file, run the following command:
+```
+pip freeze > requirements.txt
+```
